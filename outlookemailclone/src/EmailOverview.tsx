@@ -1,7 +1,6 @@
 import { SyntheticEvent } from "react";
 import { MailDetailsAndStatus } from "./App";
 import MiniEmailDisplayCard from "./MiniEmailDisplayCard";
-import { Helmet } from "react-helmet";
 import LandingPageSuspense from "./SuspenseBlink";
 import SuspenseBlink from "./SuspenseBlink";
 
