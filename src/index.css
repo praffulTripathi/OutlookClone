@@ -1,0 +1,60 @@
+:root{
+  --accent: #E54065;
+  --background: #F4F5F9;
+  --border: #CFD2DC;
+  --text: #636363;
+  --filterButton: #E1E4EA;
+  --readBkg: #F2F2F2;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@keyframes blink-animation {
+  0% {
+      opacity: 0.3;
+  }
+
+  50% {
+      opacity: 1;
+  }
+
+  100% {
+      opacity: 0.3;
+  }
+}
+
+.suspenseBlink{
+  background-color: #E54065;
+  height: 100%;
+  width: 100%;
+  transition: opacity 0.3s ease;
+  animation: blink-animation 1s infinite;
+  padding-top: 24px;
+  margin-left:24px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+}
+
+.landingPageSuspense{
+  background-color: #E54065;
+  height: 100%;
+  width: 100%;
+  transition: opacity 0.3s ease;
+  animation: blink-animation 1s infinite;
+}

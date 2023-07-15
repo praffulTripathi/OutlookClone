@@ -1,0 +1,65 @@
+
+.emailApp{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .emailAppBody{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1400px;
+    background-color: --background;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  
+  .emailFilters, .pageNumber{
+    position: sticky;
+    background-color: white;
+    z-index:100000;
+    top: 0px;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 24px;
+    font-weight: 600;
+  }
+  
+  .filterList, .pages{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    padding-left: 12px;
+  }
+  
+  .filter{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+    border-radius: 12px;
+    padding: 0 12px;
+  }
+  
+  .activeFilter{
+    background-color: var(--filterButton);
+  }
+  .currentPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+  .bkgColor{
+    background-color: var(--accent);
+    color: #FFF;
+  }
